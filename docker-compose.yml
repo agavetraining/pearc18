@@ -11,6 +11,8 @@ services:
     entrypoint: /bin/bash
     command: /usr/local/bin/keygen.sh
     user: jovyan
+    env_file:
+      - training.env
     volumes:
       - ssh-keygen-volume:/home/jovyan/.ssh
       - ./docker/ssh-keygen/keygen.sh:/usr/local/bin/keygen.sh
