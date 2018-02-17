@@ -1,38 +1,122 @@
-## Abstract (250 word max)
+Applying Best Practices in Practice: SciOps with the Agave Platform
+===================================================================
 
-As science becomes increasingly digital, researchers face new challenges and opportunities to analyze, share, and understand large volumes of data more effectively. Gateways are at the forefront of this challenge, and the Agave Platform has been at the forefront of the gateway movement. Over the last 6 years, the authors have been working to develop this Science-as-a-Service platform, making it possible for users to go from the desktop, to their local data center, to the cloud.
-But Agave isn’t simply a tool for building web portals, it is, first and foremost, a sophisticated tool chain that enables developers to run code, manage data, collaborate meaningfully, and integrate with the world around them. As such, it is versatile and adaptable to new environments and interfaces.
+**Date:** Monday, July 23nd, 2018  
+**Time:** 8:30am - 12:00pm  
+**Location:** Wyndham Grand Pittsburgh Downtown  
+**Registration:** [Registration](https://www.pearc18.pearc.org/registration)
 
-This tutorial will present a cohesive 
-
-
-
-
-
-## Summarize the proposed topic.
+Abstract
+========
 
 Science Gateways provide web-based methods of accessing collection of applications, data services, and tools that enable domain scientists who are not familiar with computers to make use of computational science. Agave provides a collection of these data services and tools in a form that can easily wrap around existing, traditional applications and HPC systems and transform them into a usable gateway.
+
 In addition, over the last four years, the popularity of container technologies such as Docker, Singularity, and Shifter resulted in their adoption within traditional HPC data centers. While not yet the dominant workload within many of the major centers, the portability of containerized applications has led to an explosion in the availability of bespoke and custom built codes alike.
+
 This containerized approach to computational science has enabled contributions by hundreds of new developers by bringing scalable, heterogeneous HPC to the web. It has empowered existing command line users by allowing them to commoditize their existing codes and pipelines as reproducible building blocks, and it has lowered the barrier to HPC for thousands more end users by giving them flexibility in how they interact with science and computation. This tutorial introduces these concepts to a new audience.
 
+Schedule
+========
 
-## Describe the proposed organizational format.
+<table class="tg" style="width: 100%">
+  <thead>
+    <tr>
+      <th class="tg-yw4l" style="min-width:150px; font-size: 1.5em; text-align:left;">Time</th>
+      <th class="tg-yw4l" style="min-width:150px; font-size: 1.5em; text-align:left;">Presenter</th>
+      <th class="tg-yw4l" style="min-width: 150px; width:60%; max-width:75%; font-size: 1.5em; text-align:left;">Topic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="tg-yw4l" style="min-width:150px; font-size: 1.5em; text-align:left;"> 00:00 - 00:00 </td>
+      <td class="tg-yw4l" style="min-width:150px; font-size: 1.5em; text-align:left;"> Presenter </td>
+      <td class="tg-yw4l" style="min-width: 150px; width:60%; font-size: 1.5em; text-align:left;" title="Introduce instructors and learners. Lay out learning objectives for the morning session. Present an overview of containers and the Agave Platform (Presentation and Discussion; 25 minutes)"> [Introductions](00%20-%20Introduction.ipynb) and [Overview](https://docs.google.com/presentation/d/1cKXnmUFuGULlSMWsixtitLywcuD9pY7pWaqwdG2FjnI) </td>
+    </tr>
+    <tr>
+      <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> 00:00 - 00:00 </td>
+      <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> Presenter </td>
+      <td class="tg-yw4l" style="min-width: 150px; width:60%; font-size: 1.5em; text-align:left;" title="Connect participant laptops to on-line resources: (Hands-on; 20 minutes)"> [Jupyter, Sanbox, and Logging In](01%20-%20Jupyter%2C%20Sandboxes%2C%20and%20Logging%20In.ipynb) </td>
+    </tr>
+    <tr>
+      <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> 00:00 - 00:00 </td>
+      <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> Presenter </td>
+      <td class="tg-yw4l" style="min-width: 150px; width:60%; font-size: 1.5em; text-align:left;" title="Overview of software carpentry practical recommendations for better scientific computing."> [Good Enough Practices for Scientific Computing](02%20-%20Good%20Enough%20Practices%20for%20Scientific%20Computing.ipynb) </td>
+    </tr>
+    <tr>
+      <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> 00:00 - 00:00 </td>
+      <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> Presenter </td>
+      <td class="tg-yw4l" style="min-width: 150px; width:60%; font-size: 1.5em; text-align:left;" title="Participants will build, commit, and publish a sample MPI application code, FUNWAVE using their sandbox tutorial environment. (Hands-on; 15 min)"> [Code, Build, and Test](03%20-%20Code,%20Build,%20and%20Test.ipynb) </td>
+    </tr>
+    <tr>
+      <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> 00:00 - 00:00 </td>
+      <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> Presenter </td>
+      <td class="tg-yw4l" style="min-width: 150px; width:60%; font-size: 1.5em; text-align:left;" title="Revisit our sample code after applying recommendations for data management, collaboration, and project organization."> [Practicing Good Enough Data, Collaboration, and Organization Practices](04%20-%20Practicing%20Good%20Enough%20Data%2C%20Collaboration%2C%20and%20Organization%20Practices.ipynb) </td>
+    </tr>
+     <tr>
+      <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> 00:00 - 00:00 </td>
+      <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> Presenter </td>
+      <td class="tg-yw4l" style="min-width: 150px; width:60%; font-size: 1.5em; text-align:left;" title="Short primer on the Agave Platform using the Agave CLI and SDK. (Hands-on; 30 min)"> [Hands on with Agave](05%20-%20Hands%20on%20with%20Agave.ipynb) </td>
+    </tr>
+    <tr>
+      <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> 00:00 - 00:00 </td>
+      <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> -- </td>
+      <td class="tg-yw4l" style="min-width: 150px; width:60%; font-size: 1.5em; text-align:left;"> Short break </td>
+    </tr>
+    <tr>
+      <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> 00:00 - 00:00 </td>
+      <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> Presenter </td>
+      <td class="tg-yw4l" style="min-width: 150px; width:60%; font-size: 1.5em; text-align:left;" title="Participants will build Docker and Singularity images of the FUNWAVE code and run them on HPC, HTC, and cloud resources spanning XSEDE and the Open Science Grid. They will look at code performance between their local machine, the cloud, running in a container on HPC hardware, and running without a container on HPC hardware. We will discuss the pros and cons of containers and different container technologies. (20 minutes)"> [Docker and Singularity](06%20-%20Docker%20and%20Singularity.ipynb) </td>
+    </tr>
+    <tr>
+      <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> 00:00 - 00:00 </td>
+      <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> Presenter </td>
+      <td class="tg-yw4l" style="min-width: 150px; width:60%; font-size: 1.5em; text-align:left;" title="Revisit our sample code after applying recommendations for software engineering and change managment."> [Practicing Good Enough Software and Change Management Practices](07%20-%20Practicing%20Good%20Enough%20Software%20and%20Change%20Management%20Practices.ipynb) </td>
+    </tr>
+    <tr>
+      <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> 00:00 - 00:00 </td>
+      <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> Presenter </td>
+      <td class="tg-yw4l" style="min-width: 150px; width:60%; font-size: 1.5em; text-align:left;" title="Participants will create an automated pipeline to build, test, benchmark and publish their application with the Agave Platform. They will learn best practices around source code control, metadata management, container labeling, tagging, naming, and versioning. We will discuss the pros and cons of alternative approaches using cyberinfrasturcture and resources commonly available at national and campus datacenters, as well as the major commercial clouds. (Hands-on: 30 min)"> [Automation and Benchmarking](08%20-%20Automation%20and%20Benchmarking.ipynb) </td>
+    </tr>
+    <tr>
+      <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> 00:00 - 00:00 </td>
+      <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> Presenter </td>
+      <td class="tg-yw4l" style="min-width: 150px; width:60%; font-size: 1.5em; text-align:left;" title="Revisit our sample code after applying recommendations for continuous integation, testing, data management, and change management."> [Practicing Good Enough Automation & Replication Practices](09%20-%20Practicing%20Good%20Enough%20Automation%20%26%20Replication%20Practices.ipynb) </td>
+    </tr>
+    <tr>
+      <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> 00:00 - 00:00 </td>
+      <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> Presenter </td>
+      <td class="tg-yw4l" style="min-width: 150px; width:60%; font-size: 1.5em; text-align:left;" title="Participants will publish and share their code, data, images, and systems through the Agave Platform. They will then run a basic parameter sweep mixing and matching Docker, Singularity, and native versions of the application running across HPC, HTC, and cloud systems from their training notebook. We will discuss the challenges and advantages of scaling this approach across hybrid cloud environments and special considerations for gateway developers. (Hands-on: 20 min)"> [Packaging, Publishing, and Portability](10%20-%20Packaging%2C%20publishing%2C%20and%20Portability.ipynb) </td>
+    </tr>
+    <tr>
+      <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> 00:00 - 00:00 </td>
+      <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> Presenter </td>
+      <td class="tg-yw4l" style="min-width: 150px; width:60%; font-size: 1.5em; text-align:left;" title="Revisit our sample code after applying recommendations for automated builds, profiling and performance, version control, data management, and release management."> [Practicing Good Enough Publication and Preservation Practices](11%20-%20Practicing%20Good%20Enough%20Publication%20and%20Preservation%20Practices.ipynb) </td>
+    </tr>
+    <tr>
+      <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> 00:00 - 00:00 </td>
+      <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> Presenter </td>
+      <td class="tg-yw4l" style="min-width: 150px; width:60%; font-size: 1.5em; text-align:left;" title="Short wrap up of the tutorial with next steps that participants can take home and implement into their new and current projects today."> [Practicing Best Practices at Home](12%20-%20Practicing%20Best%20Practices%20at%20Home.ipynb) </td>
+    </tr>
+  </tbody>
+</table>
 
-* Overview and introductions: Introduce instructors and learners. Lay out learning objectives for the morning session. Present an overview of containers and Science-as-a-Service APIs (Presentation and Discussion; 25 minutes)
-* Jupyter, Sandbox, and Logging In: Connect participant laptops to on-line resources: (Hands-on; 20 minutes)
-* Code, Build, and Test: Participants will build, commit, and publish a sample MPI application code, FUNWAVE using their sandbox tutorial environment. (Hands-on; 15 min)
-* Hands on with Agave: Short primer on the Agave Platform using the Agave CLI and SDK. (Hands-on; 30 min)
-* Short break
-* Docker and Singularity: Participants will build Docker and Singularity images of the FUNWAVE code and run them on HPC, HTC, and cloud resources spanning XSEDE and the Open Science Grid. They will look at code performance between their local machine, the cloud, running in a container on HPC hardware, and running without a container on HPC hardware. We will discuss the pros and cons of containers and different container technologies. (40 minutes)
-* Automation and Benchmarking: Participants will create an automated pipeline to build, test, benchmark and publish their application with the Agave Platform. They will learn best practices around source code control, metadata management, container labeling, tagging, naming, and versioning. We will discuss the pros and cons of alternative approaches using cyberinfrasturcture and resources commonly available at national and campus datacenters, as well as the major commercial clouds. (Hands-on: 30 min)
-* Packaging, Publishing, and Portability: Participants will publish and share their code, data, images, and systems through the Agave Platform. They will then run a basic parameter sweep mixing and matching Docker, Singularity, and native versions of the application running across HPC, HTC, and cloud systems from their training notebook. We will discuss the challenges and advantages of scaling this approach across hybrid cloud environments and special considerations for gateway developers. (Hands-on: 20 min)
+Presenters
+----------
 
+<h3>Steven Brandt<br><span style="font-size: .8em"><a href="https://cct.lsu.edu/">Louisiana State University</a></span></h3><div style="width:100% margin-top: 15px;" class="biography info-section"><div style="float:left; margin-right: 15px;" class="presenter-photo"> <img style="border-radius: 50%;border: 1px solid #ccc;" src="http://sc17.supercomputing.org/wp-content/linklings_snippets/presenter_pics/wp_presenter_img_329153_steven_brandt.jpg" scale="0"></div><div style="font-size: 1.6rem; line-height: 1.625;font-weight: bold;" class="biography-header">Biography</div><div style="font-size: 1.6rem; line-height: 1.625;" class="presenter-biography"> Steven Brandt obtained his Ph.D. from the University of Illinois at Champaign-Urbana for his research in numerical simulations of rotating black holes. He currently serves as an adjunct faulty member in the Department of Computer Science & Engineering and is involved in research into making parallel programming more effective. He works with the STEllAR team led by Dr. Hartmut Kaiser, and helps lead the Cactus Frameworks effort. He is PI on grants relating to Cactus Frameworks development and cyberinfrastructure for the Coastal Hazards Collaboratory.</div></div>
 
-## Who is the intended audience?
+<h3>Kathy Traxler<br><span style="font-size: .8em"><a href="https://cct.lsu.edu/">Louisiana State University</a></span></h3><div style="width:100% margin-top: 15px;" class="biography info-section"><div style="float:left; margin-right: 15px;" class="presenter-photo"> <img style="border-radius: 50%;border: 1px solid #ccc;" src="http://sc17.supercomputing.org/wp-content/linklings_snippets/presenter_pics/wp_presenter_img_526643_kathy_traxler.png" scale="0"></div><div style="font-size: 1.6rem; line-height: 1.625;font-weight: bold;" class="biography-header">Biography</div><div style="font-size: 1.6rem; line-height: 1.625;" class="presenter-biography">Kathy Traxler is an Education, Outreach and Training coordinator for CCT. She now works with professors, who secured grants needing EOT programs, to develop and implement these programs. Kathy received her B.S. in Computer Science from Southeastern LA University in 1988. She then went to University of Southern MS and received a M.S. in Computer Science in 1991. She taught and was undergraduate advisor in LSU's Computer Science department from June of 1993 through May of 2003. when she moved to CCT to work with students and develop EOT activities.</div></div>
 
-We are targeting researchers who have struggled to take full advantage of the diversity of HPC, HTC, cloud, container, and storage resources for their digital science. Developers new to adopting and scaling heterogeneous compute infrastructures, container technologies, federated identity and access management, and Agave will also find the material extremely beneficial. Practitioners responsible for running HPC resources will be interested in using the tools we demonstrate to deploy new software tools and improve the accessibility to non-traditional HPC re- searchers.
+<h3>John Fonner<br><span style="font-size: .8em"><a href="https://tacc.utexas.edu/">Texas Advanced Computing Center</a></span></h3><div style="width:100% margin-top: 15px;" class="biography info-section"><div style="float:left; margin-right: 15px;" class="presenter-photo"> <img style="border-radius: 50%;border: 1px solid #ccc;" src="http://sc17.supercomputing.org/wp-content/linklings_snippets/presenter_pics/wp_presenter_img_534853_john_fonner.jpg" scale="0"></div><div style="font-size: 1.6rem; line-height: 1.625;font-weight: bold;" class="biography-header">Biography</div><div style="font-size: 1.6rem; line-height: 1.625;" class="presenter-biography">John Fonner earned a Ph.D. in Biomedical Engineering at the University of Texas at Austin, where he used a blend of experimental and computational techniques to study binding interactions between peptides and conducting polymers for implant applications in the nervous system. He joined the Life Sciences Computing group at TACC in 2011 and has served on a number of projects that help life sciences researchers leverage advanced computing resources, both through training and through the development of better tools and cyberinfrastructure.</div></div>
 
+<h3>Rion Dooley<br><span style="font-size: .8em"><a href="https://tacc.utexas.edu/">Texas Advanced Computing Center</a></span></h3><div style="width:100% margin-top: 15px;" class="biography info-section"><div style="float:left; margin-right: 15px;" class="presenter-photo"> <img style="border-radius: 50%;border: 1px solid #ccc;" src="http://sc17.supercomputing.org/wp-content/linklings_snippets/presenter_pics/wp_presenter_img_735343_rion_dooley.jpg" scale="0"></div><div style="font-size: 1.6rem; line-height: 1.625;font-weight: bold;" class="biography-header">Biography</div><div style="font-size: 1.6rem; line-height: 1.625;" class="presenter-biography">Rion Dooley is principal investigator on the Agave Project a Science-as-a-Service API platform allowing researchers worldwide to manage data, run code, collaborate freely, and integrate their science anywhere. His previous projects span areas of identity management, distributed web security, full-stack application development, data management, cloud services, and high performance computing. He earned his Ph.D. in computer science from Louisiana State University. Rion actively puts his wife and two daughters at the top of his list of accomplishments. He hopes his work can someday edge out dancing teddy bears and smear-proof lipstick on their lists of favorite inventions.</div></div>
 
-## Are there any special technical requirements (A/V, network, power etc.)?
+Acknowledgement
+---------------
 
-Projector, high speed wifi connection, and power for each attendee.
+This material is based upon work supported by the National Science Foundation Plant Cyberinfrastructure Program (DBI-0735191), the National Science Foundation Plant Genome Research Program (IOS-1237931 and IOS-1237931), the National Science Foundation Division of Biological Infrastructure (DBI-1262414), the National Science Foundation Division of Advanced CyberInfrastructure (1127210), the National Science Foundation Computing and Communication Foundations (1539567), and the National Institute of Allergy and Infectious Diseases (1R01A1097403).
+
+Special thanks
+--------------
+
+Special thanks go out to ***Shuai Yuan*** for his help on the Jupyter GUI notebook.
