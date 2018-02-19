@@ -23,7 +23,7 @@ services:
     mem_limit: 2048m
     restart: on-failure
     ports:
-      - '8888:8888'
+      - '8005:8005'
     depends_on:
       - ssh-keygen
     env_file:
@@ -36,7 +36,7 @@ services:
       - .:/home/jovyan/notebooks
 
   sandbox:
-    image: agaveplatform/training-sandbox:latest
+    image: agaveplatform/ssh-sandbox:latest
     mem_limit: 2048m
     privileged: True
     restart: on-failure
