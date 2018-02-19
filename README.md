@@ -35,7 +35,7 @@ Schedule
     <tr>
       <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> 00:25 - 00:30 </td>
       <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> Presenter </td>
-      <td class="tg-yw4l" style="min-width: 150px; width:60%; font-size: 1.5em; text-align:left;" title="Connect participant laptops to on-line resources: (Hands-on; 20 minutes)"> [Jupyter, Sanbox, and Logging In](01%20-%20Jupyter%2C%20Sandboxes%2C%20and%20Logging%20In.ipynb) </td>
+      <td class="tg-yw4l" style="min-width: 150px; width:60%; font-size: 1.5em; text-align:left;" title="Connect participant laptops to on-line resources: (Hands-on; 20 minutes)"> [Jupyter, Sanbox, and Logging In](https://01%20-%20Jupyter%2C%20Sandboxes%2C%20and%20Logging%20In.ipynb) </td>
     </tr>
     <tr>
       <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> Recommended Reading </td>
