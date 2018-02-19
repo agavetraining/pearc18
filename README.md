@@ -4,7 +4,7 @@ Applying Best Practices in Practice: SciOps with the Agave Platform
 **Date:** Monday, July 23nd, 2018
 **Time:** 8:30am - 12:00pm
 **Location:** Wyndham Grand Pittsburgh Downtown
-**Registration:** [Registration](https://www.pearc18.pearc.org/registration)
+**Registration:** <a href="https://github.com/agavetraining/pearc18/blob/master/https://www.pearc18.pearc.org/registration">n</a>
 
 Abstract
 ========
@@ -30,39 +30,39 @@ Schedule
     <tr>
       <td class="tg-yw4l" style="min-width:150px; font-size: 1.5em; text-align:left;"> 00:00 - 00:25 </td>
       <td class="tg-yw4l" style="min-width:150px; font-size: 1.5em; text-align:left;"> Presenter </td>
-      <td class="tg-yw4l" style="min-width: 150px; width:60%; font-size: 1.5em; text-align:left;" title="Introduce instructors and learners. Lay out learning objectives for the morning session. Present an overview of containers and the Agave Platform (Presentation and Discussion; 25 minutes)"> [Introductions](00%20-%20Introduction.ipynb) and [Overview](https://docs.google.com/presentation/d/1cKXnmUFuGULlSMWsixtitLywcuD9pY7pWaqwdG2FjnI) </td>
+      <td class="tg-yw4l" style="min-width: 150px; width:60%; font-size: 1.5em; text-align:left;" title="Introduce instructors and learners. Lay out learning objectives for the morning session. Present an overview of containers and the Agave Platform (Presentation and Discussion; 25 minutes)"> <a href="https://github.com/agavetraining/pearc18/blob/master/00%20-%20Introduction.ipynb">s</a> and <a href="https://docs.google.com/presentation/d/1cKXnmUFuGULlSMWsixtitLywcuD9pY7pWaqwdG2FjnI">Overview</a> </td>
     </tr>
     <tr>
       <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> 00:25 - 00:30 </td>
       <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> Presenter </td>
-      <td class="tg-yw4l" style="min-width: 150px; width:60%; font-size: 1.5em; text-align:left;" title="Connect participant laptops to on-line resources: (Hands-on; 20 minutes)"><a href="https://01%20-%20Jupyter%2C%20Sandboxes%2C%20and%20Logging%20In.ipynb">
+      <td class="tg-yw4l" style="min-width: 150px; width:60%; font-size: 1.5em; text-align:left;" title="Connect participant laptops to on-line resources: (Hands-on; 20 minutes)"><a href="https://github.com/agavetraining/pearc18/blob/master/01%20-%20Jupyter%2C%20Sandboxes%2C%20and%20Logging%20In.ipynb">
       Jupyter, Sanbox, and Logging In</a>
       </td>
     </tr>
     <tr>
       <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> Recommended Reading </td>
       <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> Presenter </td>
-      <td class="tg-yw4l" style="min-width: 150px; width:60%; font-size: 1.5em; text-align:left;" title="Overview of software carpentry practical recommendations for better scientific computing."> [Good Enough Practices for Scientific Computing](02%20-%20Good%20Enough%20Practices%20for%20Scientific%20Computing.ipynb) </td>
+      <td class="tg-yw4l" style="min-width: 150px; width:60%; font-size: 1.5em; text-align:left;" title="Overview of software carpentry practical recommendations for better scientific computing."> <a href="https://github.com/agavetraining/pearc18/blob/master/02%20-%20Good%20Enough%20Practices%20for%20Scientific%20Computing.ipynb">g</a> </td>
     </tr>
     <tr>
       <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> 00:30 - 00:45 </td>
       <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> Presenter </td>
-      <td class="tg-yw4l" style="min-width: 150px; width:60%; font-size: 1.5em; text-align:left;" title="Participants will build, commit, and publish a sample MPI application code, FUNWAVE using their sandbox tutorial environment. (Hands-on; 15 min)"> [Code, Build, and Test](03%20-%20Code,%20Build,%20and%20Test.ipynb) </td>
+      <td class="tg-yw4l" style="min-width: 150px; width:60%; font-size: 1.5em; text-align:left;" title="Participants will build, commit, and publish a sample MPI application code, FUNWAVE using their sandbox tutorial environment. (Hands-on; 15 min)"> <a href="https://github.com/agavetraining/pearc18/blob/master/03%20-%20Code,%20Build,%20and%20Test.ipynb">t</a> </td>
     </tr>
     <tr>
       <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> Recommended Reading </td>
       <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> Presenter </td>
-      <td class="tg-yw4l" style="min-width: 150px; width:60%; font-size: 1.5em; text-align:left;" title="Revisit our sample code after applying recommendations for data management, collaboration, and project organization."> [Practicing Good Enough Data, Collaboration, and Organization Practices](04%20-%20Practicing%20Good%20Enough%20Data%2C%20Collaboration%2C%20and%20Organization%20Practices.ipynb) </td>
+      <td class="tg-yw4l" style="min-width: 150px; width:60%; font-size: 1.5em; text-align:left;" title="Revisit our sample code after applying recommendations for data management, collaboration, and project organization."> <a href="https://github.com/agavetraining/pearc18/blob/master/04%20-%20Practicing%20Good%20Enough%20Data%2C%20Collaboration%2C%20and%20Organization%20Practices.ipynb">s</a> </td>
     </tr>
      <tr>
       <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> 00:45 - 01:15 </td>
       <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> Presenter </td>
-      <td class="tg-yw4l" style="min-width: 150px; width:60%; font-size: 1.5em; text-align:left;" title="Short primer on the Agave Platform using the Agave CLI and SDK. (Hands-on; 30 min)"> [Hands on with Agave](05%20-%20Hands%20on%20with%20The%20Agave%20Platform.ipynb) </td>
+      <td class="tg-yw4l" style="min-width: 150px; width:60%; font-size: 1.5em; text-align:left;" title="Short primer on the Agave Platform using the Agave CLI and SDK. (Hands-on; 30 min)"> <a href="https://github.com/agavetraining/pearc18/blob/master/05%20-%20Hands%20on%20with%20The%20Agave%20Platform.ipynb">e</a> </td>
     </tr>
     <tr>
       <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> 01:15 - 01:30 </td>
       <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> Presenter </td>
-      <td class="tg-yw4l" style="min-width: 150px; width:60%; font-size: 1.5em; text-align:left;" title="Participants will build Docker and Singularity images of the FUNWAVE code and run them on HPC, HTC, and cloud resources spanning XSEDE and the Open Science Grid. They will look at code performance between their local machine, the cloud, running in a container on HPC hardware, and running without a container on HPC hardware. We will discuss the pros and cons of containers and different container technologies. (20 minutes)"> [Docker and Singularity](06%20-%20Docker%20and%20Singularity.ipynb) </td>
+      <td class="tg-yw4l" style="min-width: 150px; width:60%; font-size: 1.5em; text-align:left;" title="Participants will build Docker and Singularity images of the FUNWAVE code and run them on HPC, HTC, and cloud resources spanning XSEDE and the Open Science Grid. They will look at code performance between their local machine, the cloud, running in a container on HPC hardware, and running without a container on HPC hardware. We will discuss the pros and cons of containers and different container technologies. (20 minutes)"> <a href="https://github.com/agavetraining/pearc18/blob/master/06%20-%20Docker%20and%20Singularity.ipynb">y</a> </td>
     </tr>
     <tr>
       <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> 01:30 - 02:00 </td>
@@ -72,37 +72,37 @@ Schedule
     <tr>
       <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> 02:00 - 02:15 </td>
       <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> Presenter </td>
-      <td class="tg-yw4l" style="min-width: 150px; width:60%; font-size: 1.5em; text-align:left;" title="Participants will build Docker and Singularity images of the FUNWAVE code and run them on HPC, HTC, and cloud resources spanning XSEDE and the Open Science Grid. They will look at code performance between their local machine, the cloud, running in a container on HPC hardware, and running without a container on HPC hardware. We will discuss the pros and cons of containers and different container technologies. (20 minutes)"> [Docker and Singularity](06%20-%20Docker%20and%20Singularity.ipynb) </td>
+      <td class="tg-yw4l" style="min-width: 150px; width:60%; font-size: 1.5em; text-align:left;" title="Participants will build Docker and Singularity images of the FUNWAVE code and run them on HPC, HTC, and cloud resources spanning XSEDE and the Open Science Grid. They will look at code performance between their local machine, the cloud, running in a container on HPC hardware, and running without a container on HPC hardware. We will discuss the pros and cons of containers and different container technologies. (20 minutes)"> <a href="https://github.com/agavetraining/pearc18/blob/master/06%20-%20Docker%20and%20Singularity.ipynb">y</a> </td>
     </tr>
     <tr>
       <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> Recommended Reading </td>
       <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> Presenter </td>
-      <td class="tg-yw4l" style="min-width: 150px; width:60%; font-size: 1.5em; text-align:left;" title="Revisit our sample code after applying recommendations for software engineering and change managment."> [Practicing Good Enough Software and Change Management Practices](07%20-%20Practicing%20Good%20Enough%20Software%20and%20Change%20Management%20Practices.ipynb) </td>
+      <td class="tg-yw4l" style="min-width: 150px; width:60%; font-size: 1.5em; text-align:left;" title="Revisit our sample code after applying recommendations for software engineering and change managment."> <a href="https://github.com/agavetraining/pearc18/blob/master/07%20-%20Practicing%20Good%20Enough%20Software%20and%20Change%20Management%20Practices.ipynb">s</a> </td>
     </tr>
     <tr>
       <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> 02:15 - 02:45 </td>
       <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> Presenter </td>
-      <td class="tg-yw4l" style="min-width: 150px; width:60%; font-size: 1.5em; text-align:left;" title="Participants will create an automated pipeline to build, test, benchmark and publish their application with the Agave Platform. They will learn best practices around source code control, metadata management, container labeling, tagging, naming, and versioning. We will discuss the pros and cons of alternative approaches using cyberinfrasturcture and resources commonly available at national and campus datacenters, as well as the major commercial clouds. (Hands-on: 30 min)"> [Automation and Benchmarking](08%20-%20Automation%20and%20Benchmarking.ipynb) </td>
+      <td class="tg-yw4l" style="min-width: 150px; width:60%; font-size: 1.5em; text-align:left;" title="Participants will create an automated pipeline to build, test, benchmark and publish their application with the Agave Platform. They will learn best practices around source code control, metadata management, container labeling, tagging, naming, and versioning. We will discuss the pros and cons of alternative approaches using cyberinfrasturcture and resources commonly available at national and campus datacenters, as well as the major commercial clouds. (Hands-on: 30 min)"> <a href="https://github.com/agavetraining/pearc18/blob/master/08%20-%20Automation%20and%20Benchmarking.ipynb">g</a> </td>
     </tr>
     <tr>
       <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> Recommended Reading </td>
       <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> Presenter </td>
-      <td class="tg-yw4l" style="min-width: 150px; width:60%; font-size: 1.5em; text-align:left;" title="Revisit our sample code after applying recommendations for continuous integation, testing, data management, and change management."> [Practicing Good Enough Automation & Replication Practices](09%20-%20Practicing%20Good%20Enough%20Automation%20%26%20Replication%20Practices.ipynb) </td>
+      <td class="tg-yw4l" style="min-width: 150px; width:60%; font-size: 1.5em; text-align:left;" title="Revisit our sample code after applying recommendations for continuous integation, testing, data management, and change management."> <a href="https://github.com/agavetraining/pearc18/blob/master/09%20-%20Practicing%20Good%20Enough%20Automation%20%26%20Replication%20Practices.ipynb">s</a> </td>
     </tr>
     <tr>
       <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> 02:45 - 03:15 </td>
       <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> Presenter </td>
-      <td class="tg-yw4l" style="min-width: 150px; width:60%; font-size: 1.5em; text-align:left;" title="Participants will publish and share their code, data, images, and systems through the Agave Platform. They will then run a basic parameter sweep mixing and matching Docker, Singularity, and native versions of the application running across HPC, HTC, and cloud systems from their training notebook. We will discuss the challenges and advantages of scaling this approach across hybrid cloud environments and special considerations for gateway developers. (Hands-on: 20 min)"> [Packaging, Publishing, and Portability](10%20-%20Packaging%2C%20publishing%2C%20and%20Portability.ipynb) </td>
+      <td class="tg-yw4l" style="min-width: 150px; width:60%; font-size: 1.5em; text-align:left;" title="Participants will publish and share their code, data, images, and systems through the Agave Platform. They will then run a basic parameter sweep mixing and matching Docker, Singularity, and native versions of the application running across HPC, HTC, and cloud systems from their training notebook. We will discuss the challenges and advantages of scaling this approach across hybrid cloud environments and special considerations for gateway developers. (Hands-on: 20 min)"> <a href="https://github.com/agavetraining/pearc18/blob/master/10%20-%20Packaging%2C%20publishing%2C%20and%20Portability.ipynb">y</a> </td>
     </tr>
     <tr>
       <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> Recommended Reading </td>
       <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> Presenter </td>
-      <td class="tg-yw4l" style="min-width: 150px; width:60%; font-size: 1.5em; text-align:left;" title="Revisit our sample code after applying recommendations for automated builds, profiling and performance, version control, data management, and release management."> [Practicing Good Enough Publication and Preservation Practices](11%20-%20Practicing%20Good%20Enough%20Publication%20and%20Preservation%20Practices.ipynb) </td>
+      <td class="tg-yw4l" style="min-width: 150px; width:60%; font-size: 1.5em; text-align:left;" title="Revisit our sample code after applying recommendations for automated builds, profiling and performance, version control, data management, and release management."> <a href="https://github.com/agavetraining/pearc18/blob/master/11%20-%20Practicing%20Good%20Enough%20Publication%20and%20Preservation%20Practices.ipynb">s</a> </td>
     </tr>
     <tr>
       <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> 03:15 - 03:30 </td>
       <td class="tg-yw4l" style="min-width: 150px; font-size: 1.5em; text-align:left;"> Presenter </td>
-      <td class="tg-yw4l" style="min-width: 150px; width:60%; font-size: 1.5em; text-align:left;" title="Short wrap up of the tutorial with next steps that participants can take home and implement into their new and current projects today."> [Practicing Best Practices at Home](12%20-%20Practicing%20Best%20Practices%20at%20Home.ipynb) </td>
+      <td class="tg-yw4l" style="min-width: 150px; width:60%; font-size: 1.5em; text-align:left;" title="Short wrap up of the tutorial with next steps that participants can take home and implement into their new and current projects today."> <a href="https://github.com/agavetraining/pearc18/blob/master/12%20-%20Practicing%20Best%20Practices%20at%20Home.ipynb">e</a> </td>
     </tr>
   </tbody>
 </table>
