@@ -34,6 +34,7 @@ services:
       - ssh-keygen-volume:/home/jovyan/.ssh:ro
       - training-volume:/home/jovyan/work
       - .:/home/jovyan/notebooks
+      - ./INSTALL.ipynb:/home/jovyan/INSTALL.ipynb
 
   sandbox:
     image: agaveplatform/training-sandbox:latest
