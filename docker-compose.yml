@@ -13,8 +13,8 @@ services:
     mem_limit: 512m
     command: --debug=True --docker --docker.watch --web --web.address=:28443 --entryPoints='Name:http Address::80 --entryPoints='Name:https Address::443 --defaultEntryPoints='http,https'
     ports:
-      - '443:443'
-      - '80:80'
+      - '8004:443'
+      - '8005:80'
       - '28443:28443'
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
