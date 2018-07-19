@@ -33,7 +33,6 @@ services:
 
   jupyter:
     image: agaveplatform/jupyter-notebook:latest
-    command: start-notebook.sh --NotebookApp.token=''
     mem_limit: 2048m
     restart: on-failure
     ports:
