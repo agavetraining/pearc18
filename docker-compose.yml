@@ -57,7 +57,7 @@ services:
       - "traefik.frontend.rule=PathPrefix:/"
 
   sandbox:
-    image: training-sandbox:latest
+    image: agaveplatform/training-sandbox:latest
     mem_limit: 2048m
     privileged: True
     restart: on-failure

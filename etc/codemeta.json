@@ -1,0 +1,134 @@
+{
+  "@context": "https://raw.githubusercontent.com/codemeta/codemeta/master/codemeta.jsonld",
+  "@type": "SoftwareSourceCode",
+  "identifier": "FUNWAVE-TVD",
+  "description": "FUNWAVE–TVD is the TVD version of the fully nonlinear Boussinesq wave model (FUNWAVE) initially developed by Kirby et al. (1998)",
+  "name": "FUNWAVE-TVD",
+  "codeRepository": "https://github.com/fengyanshi/FUNWAVE-TVD",
+  "issueTracker": "https://github.com/fengyanshi/FUNWAVE-TVD/issues",
+  "license": "https://opensource.org/licenses/BSD-2-Clause",
+  "version": "3.3",
+  "programmingLanguage": {
+    "@type": "ComputerLanguage",
+    "name": "Fortrain",
+    "version": "77",
+    "url": "https://gcc.gnu.org/fortran/"
+  },
+  "runtimePlatform": "GNU Fortran 77",
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "Fengyan",
+      "familyName": "Shi",
+      "email": "fyshi@udel.edu",
+      "@id": "https://orcid.org/0000-0003-1568-2449"
+    },
+    {
+      "@type": "Person",
+      "givenName": "James",
+      "familyName": "Kirby",
+      "email": "kirby@udel.edu",
+      "@id": "https://orcid.org/0000-0001-6978-899X"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Babak",
+      "familyName": "Tehranirad",
+      "email": "btrad@udel.edu",
+      "@id": "https://orcid.org/0000-0002-1634-9165"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Jeffrey",
+      "familyName": "Harris",
+      "email": "",
+      "@id": "https://orcid.org/0000-0002-8167-7974"
+    }
+  ],
+  "copyrightHolder": [
+    {
+      "@id": "http://www.udel.edu/kirby/programs/funwave/funwave.html",
+      "@type": "Organization",
+      "name": "FUNWAVE Development Team",
+      "url": "http://www.udel.edu/kirby/programs/funwave/funwave.html"
+    }
+  ],
+  "maintainer": {
+    "@type": "Person",
+    "givenName": "Fengyan",
+    "familyName": "Shi",
+    "email": " fyshi@udel.edu",
+    "@id": "https://orcid.org/0000-0003-1568-2449"
+  },
+  "softwareSuggestions": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Open MPI",
+      "provider": {
+        "@id": "https://www.open-mpi.org/",
+        "@type": "Organization",
+        "name": "Open MPI: Open Source High Performance Computing",
+        "url": "https://www.open-mpi.org/software/ompi/v2.1/"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "gfortran",
+      "provider": {
+        "@id": "https://gcc.gnu.org/fortran/",
+        "@type": "Organization",
+        "name": "GNU Fortran",
+        "url": "https://gcc.gnu.org/fortran/"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "gcc",
+      "provider": {
+        "@id": "https://gcc.gnu.org/",
+        "@type": "Organization",
+        "name": "GNU Compiler Collection (GCC)",
+        "url": "https://gcc.gnu.org/"
+      }
+    }
+  ],
+  "softwareRequirements": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Open MPI",
+      "provider": {
+        "@id": "https://www.open-mpi.org/",
+        "@type": "Organization",
+        "name": "Open MPI: Open Source High Performance Computing",
+        "url": "https://www.open-mpi.org/software/ompi/v2.1/"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "gfortran",
+      "provider": {
+        "@id": "https://gcc.gnu.org/fortran/",
+        "@type": "Organization",
+        "name": "GNU Fortran",
+        "url": "https://gcc.gnu.org/fortran/"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "gcc",
+      "provider": {
+        "@id": "https://gcc.gnu.org/",
+        "@type": "Organization",
+        "name": "GNU Compiler Collection (GCC)",
+        "url": "https://gcc.gnu.org/"
+      }
+    }
+  ],
+  "contIntegration": "https://travis-ci.org/codemeta/codemetar",
+  "developmentStatus": "http://www.repostatus.org/#active",
+  "keywords": [
+    "wave simulation",
+    "mpi",
+    "coastal"
+  ]
+}
