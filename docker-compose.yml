@@ -11,10 +11,18 @@ services:
   traefik:
     image: traefik:latest
     mem_limit: 512m
-    command: --debug=True --docker --docker.watch --web --web.address=:28443 --entryPoints='Name:http Address::80 --entryPoints='Name:https Address::443 --defaultEntryPoints='http,https'
+    command:
+      - '--debug=True'
+      - '--docker'
+      - '--docker.watch'
+      - '--web'
+      - '--web.address=:28443'
+      - '--entryPoints=Name:http Address::80'
+      - '--entryPoints=Name:https Address::443 TLS'
+      - '--defaultEntryPoints=http,https'
     ports:
-      - '8004:443'
-      - '8005:80'
+      - '443:443'
+      - '80:80'
       - '28443:28443'
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
@@ -30,6 +38,8 @@ services:
     volumes:
       - ssh-keygen-volume:/home/jovyan/.ssh
       - ./docker/ssh-keygen/keygen.sh:/usr/local/bin/keygen.sh
+    labels:
+      - "traefik.enable=false"
 
   jupyter:
     image: agaveplatform/jupyter-notebook:latest
@@ -50,11 +60,12 @@ services:
       - .:/home/jovyan/notebooks
       - ./INSTALL.ipynb:/home/jovyan/INSTALL.ipynb
     labels:
+      - "traefik.enable=true"
       - "traefik.port=8888"
       - "traefik.protocol=http"
-      - "traefik.tags=${AGAVE_USERNAME},jupyter"
-      - "traefik.backend=${AGAVE_USERNAME}-training"
+      - "traefik.tags=gateways18"
       - "traefik.frontend.rule=PathPrefix:/"
+      - "traefik.frontend.passHostHeader=true"
 
   sandbox:
     image: agaveplatform/training-sandbox:latest
@@ -74,8 +85,7 @@ services:
       - training-volume:/home/jovyan/work
       - /var/run/docker.sock:/var/run/docker.sock
     labels:
-      - traefik.enable=false
-
+      - "traefik.enable=false"
 
   jenkins:
     build:
@@ -99,9 +109,9 @@ services:
       - ssh-keygen-volume:/var/jenkins_home/.ssh
 #      - jenkins-home-volume:/var/jenkins_home
     labels:
+      - "traefik.enable=true"
       - "traefik.port=8080"
       - "traefik.protocol=http"
       - "traefik.tags=jenkins"
-      - "traefik.backend=jenkins"
       - "traefik.frontend.rule=PathPrefix:/jenkins"
       - "traefik.frontend.passHostHeader=true"
