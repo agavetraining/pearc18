@@ -1,6 +1,7 @@
 #!/bin/sh
 
-# post-checkout hook - looks for changes to Gemfile[.lock] or package.json, and if
+# post-checkout hook - looks for changes to Agave app definition files and updates
+# the app, its metadata, and test data as needed.
 # found, reinstalls the given packages every time you `git merge` or `git pull`
 
 # To install, copy to your project's .git/hooks folder, and `chmod +x post-merge`
@@ -9,20 +10,55 @@ function changed {
   git diff --name-only HEAD@{2} HEAD | grep "^$1" > /dev/null 2>&1
 }
 
-if changed 'Gemfile.*'; then
-  echo "Gemfile changed, bundling"
-  bundle install
-  [[ -d 'tmp' ]] && touch 'tmp/restart.txt'
+function lookup_agave_codemeta_metadata_uuid {
+   metadata-list --query '{"name": "codemeta"}' -P 5547200605505711640-242ac117-0001-005  --filter=uuid -v | jq -r '.[] | .uuid' | grep -v "null" | head -n 1
+}
+
+
+AGAVE_APP_ID=$(jq -r '.name + "-" + .version' app.json)
+AGAVE_APP_UUID=$(apps-list -v --filter=uuid $agave_app_id | jq -r '.uuid')
+AGAVE_APP_DEPLOYMENT_SYSTEM=$(jq -r '.deploymentSystem' app.json)
+AGAVE_APP_DEPLOYMENT_PATH=$(jq -r '.deploymentPath' app.json)
+
+# Push the codemeta definition up to the server whenever this changes
+if changed 'codemeta.json'; then
+  files-upload -F codemeta.json -S $AGAVE_APP_DEPLOYMENT_SYSTEM $AGAVE_APP_DEPLOYMENT_PATH
+
+  # Lookup Agave metadata item for the codemeta definition if it exists
+  AGAVE_CODEMETA_METADATA_ID=$(lookup_agave_codemeta_metadata_uuid)
+
+  # Update the entry. If no entry exists, this creates one.
+  jq --arg app_uuid $AGAVE_APP_UUID '. | {"name": "codemeta", "value": ., "associatedUuid": $app_uuid}' | metadata-addupdate -F - $AGAVE_CODEMETA_METADATA_ID
+
 fi
 
-if changed 'db/migrate'; then
-  echo "Migrations pending, migrating"
-  rake db:migrate RAILS_ENV=development
-  rake db:migrate RAILS_ENV=test
-  rake db:migrate RAILS_ENV=production
-  [[ -d 'tmp' ]] && touch 'tmp/restart.txt'
+# Update the Agave app sample data whenever the sample data changes
+if changed 'data/input.txt'; then
+  files-upload -F data/input.txt -S $AGAVE_APP_DEPLOYMENT_SYSTEM $AGAVE_APP_DEPLOYMENT_PATH
 fi
 
-if changed 'package.json'; then
-  npm install
+
+# Update the Agave app definition whenever the app definitino file changes
+if changed 'app.json'; then
+  files-upload -F app.json -S $AGAVE_APP_DEPLOYMENT_SYSTEM $AGAVE_APP_DEPLOYMENT_PATH
+  apps-addupdate -F app.json
 fi
+
+
+# Uncomment to kick off benchmark suites whenever on merge to master
+#AGAVE_JOB_TEMPLATE=$(jobs-template --cache --allfields $AGAVE_APP_ID)
+#BENCHMARK_MERGE_REV=$(date +%s)
+#
+#for i in `ls -d benchmarks`; do
+#  BENCHMARK_DIR="agave://$AGAVE_APP_DEPLOYMENT_SYSTEM/$(pwd)/benchmarks/$i"
+#  BENCHMARK_JOB_NAME="benchmark-$i"
+#  BENCHMARK_ARCHIVE_PATH="benchmarks/$BENCHMARK_MERGE_REV/$i"
+#
+#  echo "$AGAVE_JOB_TEMPLATE" | \
+#    jq --arg job_archive_path "$BENCHMARK_ARCHIVE_PATH" \
+#       --arg job_name $BENCHMARK_JOB_NAME \
+#       --arg job_input_dir $BENCHMARK_DIR \
+#       '. | .name=$job_name | .inputs.datafile=$job_input_dir | .archive=true | .archivePath=$job_archive_path' | \
+#    jobs-submit -F -
+#
+#done
