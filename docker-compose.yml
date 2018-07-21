@@ -29,7 +29,7 @@ services:
 
 
   ssh-keygen:
-    image: agaveplatform/jupyter-notebook:latest
+    image: agaveplatform/training-sandbox:latest
     entrypoint: /bin/bash
     command: /usr/local/bin/keygen.sh
     user: jovyan
@@ -37,7 +37,6 @@ services:
       - training.env
     volumes:
       - ssh-keygen-volume:/home/jovyan/.ssh
-      - ./docker/ssh-keygen/keygen.sh:/usr/local/bin/keygen.sh
     labels:
       - "traefik.enable=false"
 
